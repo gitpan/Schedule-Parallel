@@ -5,10 +5,10 @@ use ExtUtils::MakeMaker;
 WriteMakefile
 (
 	NAME => "Schedule::Parallel",
-    'VERSION_FROM'	=> 'Parallel.pm',
+    'VERSION_FROM'	=> 'lib/Schedule/Parallel.pm',
 	(
 		$] >= 5.005
-		? (ABSTRACT   => 'Run jobs n-way parallel.',
+		? (ABSTRACT   => 'Run a queue of closures n-way parallel via fork or threads.',
 		AUTHOR     => 'Steven Lembark (slembark@knightsbridge.com)')
 		: ()
 	),

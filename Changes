@@ -1,5 +1,24 @@
 Revision history for Perl extension Schedule::Parallel.
 
-0.99  Tue Feb  5 15:12:10 2002
+
+1.1 Mon Mar 29 17:16:58 CST 2004
+
+	To simplify debugging, numjobs == 0 avoids forking, 
+	it just executes the que single stream via $_->() for @_.
+
+1.01	Tue Aug 27 15:32:15 CDT 2002
+
+	Separate dispatch and wait into Schedule::Parallel::Thread and 
+	Schedule::Parallel::Fork to handle threads and, er... forks.
+
+	Added "usethreads" sub to take/return true if threads should
+	be used when avaiable. If $Config{useithreads} is not true then
+	usethreads stubs to return zero.
+
+	Added dependency on core module Config.
+	
+
+0.99	Tue Feb  5 15:12:10 2002
+
 	First public release. Added verbose option via our $verbose.
 

@@ -1,5 +1,8 @@
 Changes
 MANIFEST
 Makefile.PL
-Parallel.pm
 test.pl
+lib/Schedule/Parallel.pm
+lib/Schedule/Parallel/Fork.pm
+lib/Schedule/Parallel/Thread.pm
+META.yml                                 Module meta-data (added by MakeMaker)
